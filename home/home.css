@@ -205,3 +205,37 @@ a {
     padding: 0 120px;
     color: var(--branco);
 }
+
+/*Seção nossos livros */
+
+.nossos-livros {
+    padding: 50px 120px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap:100px;
+}
+
+.livros-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20%;
+
+    justify-content: center;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.livro h3, h4 {
+
+}
