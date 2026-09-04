@@ -1,33 +1,5 @@
-/* CABEÇALHO */
 
-a {
-    color:var(--branco);
-    text-decoration: none;
-}
-.cabecalho {
-    background-color: var(--azul-escuro);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 120px ;
-
-    height:10vh /*10% da visualização vertical do dispositivo */
-}
-
-.navegacao {
-    display: flex;
-    align-items: center;
-
-    gap: 50px;
-}
-
-.navegacao a {
-    text-transform: uppercase;
-    font-size: 1em; /* equivale a 16px */
-    font-weight: 500;
-}
 
 /* Conteúdo-principal */
 
@@ -103,7 +75,6 @@ a {
 }
 
 .titulo-secao span {
-    display: flex;
     width: 250px;
     height: 4px;
     background-color: var(--cor-destaque);
@@ -264,16 +235,11 @@ a {
 
 .rodape {
     background-color: var(--azul-escuro);
+    height: 40vh;
     padding: 50px 120px;
-
-    color:white;
-
-    height: 50vh;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    /* gap: 33%; */
 }
 
 .conteudo-rodape {
@@ -281,33 +247,22 @@ a {
     justify-content: space-between;
 }
 
-.logos-projeto {
+.logos {
     display: flex;
+    justify-self: flex-start;
     flex-direction: column;
-
     justify-content: space-between;
 }
 
-.logos-projeto img{
-    width: 150px;
+.conteudo-rodape span {
+    display: flex;
+    justify-self: center;
+    width: 250px;
+    height: 4px;
+    background-color: var(--branco);
 }
 
-.texto-foot {
-    display: grid;
-    grid-template-columns: repeat(2, );
-    grid-template-rows: repeat(auto, 30%);
-    gap: 30%;
-
-}
-
-.texto-foot h3 {
-    color: var(--cor-destaque);
-    font-size: 0.8em;
-    font-weight: 400;
-}
-
-.texto-foot ul {
-    font-size: 0.8em;
-    margin-bottom: 10px;
-    font-weight: 200;
+.subrodape {
+    justify-self: flex-end;
+    display: flex;
 }
